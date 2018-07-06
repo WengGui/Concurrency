@@ -1,6 +1,7 @@
 package com.weng.concurrency.example.count;
 
 import com.weng.concurrency.annoations.NotThreadSafa;
+import org.joda.time.format.DateTimeFormatter;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -15,6 +16,8 @@ public class CountExample1 {
     public static int threadTotal = 200;
 
     public static int count = 0;
+
+    private static DateTimeFormatter formatter;
 
 
     public static void main(String[] args) throws InterruptedException {
